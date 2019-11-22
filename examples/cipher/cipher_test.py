@@ -22,7 +22,6 @@ from examples.cipher import cipher
 class CipherTest(testutils.BaseTestCase):
 
   def testCipher(self):
-    self.assertEqual(cipher.rot13('Hello world!'), 'Uryyb jbeyq!')
     self.assertEqual(cipher.caesar_encode(13, 'Hello world!'), 'Uryyb jbeyq!')
     self.assertEqual(cipher.caesar_decode(13, 'Uryyb jbeyq!'), 'Hello world!')
 
